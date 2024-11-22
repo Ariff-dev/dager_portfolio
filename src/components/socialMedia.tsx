@@ -19,12 +19,6 @@ const socialMedia = [
   },
 
   {
-    id: 3,
-    name: 'YouTube Live Clips',
-    url: 'https://youtube.com/@DagerLive',
-    icon: <Youtube />,
-  },
-  {
     id: 4,
     name: 'Discord',
     url: 'https://discord.gg/4NFk6TamAB',
@@ -35,12 +29,6 @@ const socialMedia = [
     name: 'GitHub',
     url: 'https://github.com/MarianoVilla',
     icon: <Github />,
-  },
-  {
-    id: 6,
-    name: 'YouTube Music',
-    url: 'https://youtube.com/c/DagerMusic',
-    icon: <Youtube />,
   },
 ]
 
@@ -53,7 +41,7 @@ const SocialLinks = () => {
           href={item.url}
           target='_blank'
           rel='noopener noreferrer'
-          className='text-custom-purple-text-gradient-secondary hover:text-gray-400 border-4 p-4 rounded-full border-custom-purple-text-gradient'
+          className='flex p-1 lg:text-custom-purple-text-gradient-secondary lg:hover:text-gray-400 border-4 lg:p-4 rounded-full border-custom-purple-text-gradient'
         >
           {item.icon}
         </a>

@@ -40,13 +40,15 @@ const FunSection = () => {
       <div className='container mx-auto px-4'>
         {/* Título con gradiente usando los colores del tema */}
         <h2 className='text-4xl lg:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-custom-purple-text-gradient to-custom-purple-text-gradient-secondary'>
-          Aqui Tenemos Pepinos, Yo y el LumberJack
+          Pepinos y Momentos Memorables
         </h2>
 
         {/* Texto debajo del título, usando los colores de texto */}
         <p className='text-center px-4 text-lg lg:text-2xl mb-8 text-white'>
-          Conocemé un poco más de mi,de manera visual sobre mi gusto desmedido
-          sobre los pepinos, el Lol y al parecer tomar agua
+          Bienvenid@ a este tributo sin igual a los pepinos, esos bastones
+          verdes de felicidad que siempre están ahí para darte frescura... y
+          quizás un poco más. Ah, y también encontrarás un poco de mi vida, pero
+          vamos, sabemos que viniste por los pepinos.
         </p>
 
         {/* Contenedor principal con flexbox para que se acomode bien */}
@@ -83,6 +85,11 @@ const FunSection = () => {
               src='https://tbot.xyz/lumber/'
               className='w-full lg:w-11/12 h-full min-h-[500px] rounded-lg border-2 border-gray-200 shadow-lg'
             ></iframe>
+            <p className='text-center px-4 text-lg lg:text-xl mt-4 text-white'>
+              ¿Cansado de mirar pepinos? Relájate con este juego de cortar
+              árboles. No te preocupes, ningún pepino será herido durante la
+              partida (o eso espero).
+            </p>
           </div>
         </div>
       </div>

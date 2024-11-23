@@ -92,8 +92,10 @@ function App() {
                   Sobre mí
                 </p>
                 <p className='text-center px-4 text-lg lg:text-2xl'>
-                  Más allá de la programación, siempre tengo curiosidad por el
-                  mundo y estoy ansioso por aprender algo nuevo.
+                  ¿Quién soy? Bueno, depende de a quién le preguntes. Para
+                  algunos, soy el gurú del código. Para otros, un simple mortal
+                  con un teclado y un café en mano... pero siempre con un meme
+                  listo para salvar el día.
                 </p>
               </div>
               <div>

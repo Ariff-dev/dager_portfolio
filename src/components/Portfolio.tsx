@@ -39,7 +39,7 @@ export const Portfolio = () => {
       {gitWork.map((work) => (
         <div
           key={work.id}
-          className='flex flex-col lg:flex-row justify-center items-center w-full  gap-2'
+          className='flex flex-col lg:flex-row justify-center items-center w-full   gap-2'
         >
           <div className='lg:w-1/2  '>
             <div className='flex gap-4'>

@@ -3,30 +3,30 @@ import React, { useState } from 'react'
 const aboutItems = [
   {
     id: 1,
-    title: 'Cats',
+    title: 'Gatos',
     description:
-      'I like cats because, much like well-designed software, they are elegant, curious, and always find creative solutions to any situation. Their ability to adapt and explore reminds me of the importance of being flexible and seeking new perspectives when solving programming problems.',
+      'Me gustan los gatos porque, al igual que el software bien diseñado, son elegantes, curiosos y siempre encuentran soluciones creativas para cualquier situación. Su capacidad para adaptarse y explorar me recuerda la importancia de ser flexible y buscar nuevas perspectivas al resolver problemas de programación.',
     icon: 'CAT',
   },
   {
     id: 2,
-    title: 'Programming',
+    title: 'Programación',
     description:
-      'Programming is more than just writing code; it’s about solving problems and bringing ideas to life. For me, it’s like building something from scratch, where every line contributes to creating something functional and meaningful.',
+      'La programación es más que solo escribir código; se trata de resolver problemas y dar vida a ideas. Para mí, es como construir algo desde cero, donde cada línea contribuye a crear algo funcional y significativo.',
     icon: 'Guitar',
   },
   {
     id: 3,
-    title: 'Guitar',
+    title: 'Guitarra',
     description:
-      'Music and software development have more in common than they seem. Playing the guitar has taught me to be consistent, creative, and attentive to detail—qualities I also apply to programming.',
+      'La música y el desarrollo de software tienen más en común de lo que parece. Tocar la guitarra me ha enseñado a ser constante, creativo y a prestar atención a los detalles, cualidades que también aplico en la programación.',
     icon: 'Code',
   },
   {
     id: 4,
-    title: 'Philosophy',
+    title: 'Filosofía',
     description:
-      ' Constant reflection on ethics, logic, and decision-making helps me create more balanced, efficient, and ethical solutions in my projects.',
+      'La reflexión constante sobre ética, lógica y toma de decisiones me ayuda a crear soluciones más equilibradas, eficientes y éticas en mis proyectos.',
     icon: 'Code',
   },
 ]
@@ -39,7 +39,7 @@ export const AboutItems = () => {
       {aboutItems.map((item) => (
         <div
           key={item.id}
-          className={`flex flex-col lg:flex-row lg:items-center gap-2 p-4 lg:p-8 rounded-md transition-all duration-300 ease-in-out ${
+          className={`flex flex-col lg:flex-row justify-center lg:items-center gap-2 p-4 lg:p-8 rounded-md transition-all duration-300 ease-in-out min-h-[324px] lg:min-h-[176px] ${
             hoveredItem === item.id
               ? 'bg-gradient-to-r from-custom-purple-text-gradient to-custom-purple-text-gradient-secondary'
               : 'bg-custom-radial'

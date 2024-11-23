@@ -4,67 +4,64 @@ const workExperience = [
   {
     id: 1,
     company: 'University of Nebraska-Lincoln',
-    role: 'Lead Developer (2020 - Present)',
+    role: 'Desarrollador Principal (2020 - Actualidad)',
     responsibilities: [
-      'Full-stack development using .NET Core, Java, MySQL, and AWS.',
-      'Leading development teams with technical guidance.',
-      'System design consulting.',
+      'Desarrollo Full-stack utilizando .NET Core, Java, MySQL y AWS.',
+      'Liderar equipos de desarrollo con orientación técnica.',
+      'Consultoría en diseño de sistemas.',
     ],
     achievements:
-      'Successfully developed and led projects in a fully remote, international environment.',
+      'Desarrollé y lideré proyectos con éxito en un entorno completamente remoto e internacional.',
   },
   {
     id: 2,
     company: 'Grupo Alpha 2000',
-    role: 'Software Developer (2018 - Present)',
+    role: 'Desarrollador de Software (2018 - Actualidad)',
     responsibilities: [
-      'Specialized in .NET technologies, including ASP.NET/Core, RESTful APIs, Xamarin, and microservices.',
-      'Delivered efficient and robust solutions for diverse applications.',
-    ],
-  },
-  {
-    id: 3,
-    company: 'Freelance Software Developer',
-    role: 'Duration: Since 2016',
-    responsibilities: [
-      "Full-stack software development tailored to clients' needs.",
-      'IT consulting focused on process optimization and automation.',
+      'Especializado en tecnologías .NET, incluyendo ASP.NET/Core, APIs RESTful, Xamarin y microservicios.',
+      'Entregué soluciones eficientes y robustas para diversas aplicaciones.',
     ],
   },
   {
     id: 4,
     company: 'Atento',
-    role: 'Help Desk Technician (2017 - 2018)',
+    role: 'Técnico de Soporte (2017 - 2018)',
     responsibilities: [
-      'Resolved technical issues (VoIP, networking, router configurations) for one of Argentina’s largest telecom companies.',
+      'Resolución de problemas técnicos (VoIP, redes, configuraciones de routers) para una de las empresas de telecomunicaciones más grandes de Argentina.',
+    ],
+  },
+  {
+    id: 3,
+    company: 'Desarrollador de Software Freelance',
+    role: 'Duración: Desde 2016',
+    responsibilities: [
+      'Desarrollo de software Full-stack adaptado a las necesidades de los clientes.',
+      'Consultoría en IT enfocada en la optimización de procesos y automatización.',
     ],
   },
 ]
 
 const WorkExperience = () => {
   return (
-    <div className='space-y-6'>
-      {workExperience.map((item) => (
-        <div key={item.id} className='p-4 border rounded-md shadow-md'>
-          <h2 className='text-xl font-bold'>{item.company}</h2>
-          <p className='text-gray-600'>
-            <strong>Role:</strong> {item.role}
-          </p>
-          <div className='mt-2'>
-            <p className='font-semibold'>Responsibilities:</p>
-            <ul className='list-disc ml-6 text-gray-800'>
-              {item.responsibilities.map((responsibility, index) => (
-                <li key={index}>{responsibility}</li>
-              ))}
-            </ul>
-          </div>
-          {item.achievements && (
-            <p className='mt-2 text-gray-800'>
-              <strong>Achievements:</strong> {item.achievements}
-            </p>
-          )}
+    <div className='container flex flex-col gap-4 lg:gap-8 lg:w-1/2'>
+      <div className='flex flex-col gap-2 '>
+        <h3 className='text-4xl lg:text-6xl font-bold text-center bg-gradient-to-r from-custom-purple-text-gradient to-custom-purple-text-gradient-secondary bg-clip-text text-transparent'>
+          Experiencia Laboral
+        </h3>
+      </div>
+      <div>
+        <div className='flex flex-col gap-4 lg:gap-8 text-white px-4 lg:px-0'>
+          {workExperience.map((item) => (
+            <div className=' bg-custom-radial flex flex-col justify-center p-2 lg:p-8 rounded-md lg:min-h-[212px]'>
+              <p className='lg:text-xl font-bold bg-gradient-to-r from-custom-purple-text-gradient-secondary to-white bg-clip-text text-transparent'>
+                {item.role}
+              </p>
+              <p className='font-bold text-xl lg:text-3xl'>{item.company}</p>
+              <p className='lg:text-lg'>{item.responsibilities}</p>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   )
 }

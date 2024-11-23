@@ -3,7 +3,6 @@ import React from 'react'
 import DNS from '../assets/images/dns.gif'
 import GIT from '../assets/images/git.gif'
 import HTTP from '../assets/images/HTTP.gif'
-import { url } from 'inspector'
 import { Github } from 'iconoir-react'
 
 const gitWork = [

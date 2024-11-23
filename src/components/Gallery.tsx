@@ -40,7 +40,7 @@ const FunSection = () => {
       <div className='container mx-auto px-4'>
         {/* Título con gradiente usando los colores del tema */}
         <h2 className='text-4xl lg:text-5xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-custom-purple-text-gradient to-custom-purple-text-gradient-secondary'>
-          Aqui Tenemos Pepinos, Yo y el LumbreJack
+          Aqui Tenemos Pepinos, Yo y el LumberJack
         </h2>
 
         {/* Texto debajo del título, usando los colores de texto */}
